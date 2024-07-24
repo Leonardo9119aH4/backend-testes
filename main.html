@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-            color: green;
-        }
-    </style>
-    <script>
-        fetch("/api", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({})
-        })
-    </script>
+    <title>JavaScript Terminal</title>
+    <link rel="stylesheet" href="main.css">
+    <script async defer src="main.js"></script>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div id="terminal-container">
+        <div id="output"></div>
+        <input type="text" id="input" placeholder="Type your command..." autofocus>
+    </div>
 </body>
 </html>
